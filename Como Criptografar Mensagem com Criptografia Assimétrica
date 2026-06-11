@@ -1,0 +1,50 @@
+🤫 Como Criptografar suas Fofocas com PGP (Criptografia Assimétrica)
+Oii, gente! Hoje nós vamos aprender como criptografar nossas conversas e fofocas para que **apenas** quem a gente quer consiga ler. Ninguém mais vai bisbilhotar!
+
+🛠️ Ferramentas e Comandos Utilizados
+No tutorial de hoje, vamos usar o **CyberChef**, uma ferramenta online super segura. Usaremos três comandos lá dentro:
+
+ * Generate PGP Key Pair (Gerar par de chaves)
+ * PGP Encrypt (Criptografar)
+ * PGP Decrypt (Descriptografar)
+
+Primeiramente, acesse o site pelo seu navegador (eu uso o Brave, mas você pode usar o de sua preferência):
+
+🔗 Acessar o CyberChef. 
+
+https://gchq.github.io/CyberChef/ 
+
+🔑 Passo 1: Gerando as Chaves de Acesso
+Assim que entrar no site, vá na barra de pesquisa no canto superior esquerdo e digite **PGP**. Todas as ferramentas que precisamos vão aparecer ali.
+ 1. Pegue a opção **Generate PGP Key Pair** e arraste para o meio da tela (na área "Recipe").
+ 2. Assim que você soltar, o site vai gerar automaticamente as suas chaves na área **Output** (no canto inferior direito).
+ 3. Abra o Bloco de Notas no seu computador, copie tudo o que foi gerado no *Output* e cole lá.
+> 📌 **Atenção:** Você vai perceber que foram gerados dois blocos de texto. O primeiro é a sua **Chave Privada** e o de baixo é a sua **Chave Pública**. Guarde isso muito bem!
+> 
+Agora, pode limpar a tela do CyberChef (clicando no ícone da lixeira em "Recipe") para o próximo passo.
+### 🔒 Passo 2: Criptografando a Mensagem (Escondendo a fofoca)
+ 1. Na barra de pesquisa do lado esquerdo, procure por **PGP Encrypt** e arraste para o meio da tela.
+ 2. Na caixinha que se abrir, no campo **Key**, você deve colar a sua **Chave Pública** (lembre-se: nunca use a privada aqui!).
+ 3. Agora, vá até a área **Input** (no canto superior direito) e digite a sua mensagem secreta, texto ou a fofoca que desejar.
+ 4. Se o resultado não aparecer na hora, clique no botão verde **BAKE** para atualizar.
+ 5. O texto criptografado (uma mistura de letras e números aleatórios) vai aparecer no **Output**. Copie esse código!
+**O que enviar para o seu amigo?**
+Para a pessoa conseguir ler, você precisa enviar para ela:
+
+ * A **Chave Privada** (aquela do primeiro passo).
+
+ * A **Mensagem Criptografada** (que você acabou de gerar).
+
+### 🔓 Passo 3: Descriptografando (Como a outra pessoa vai ler)
+Imagine que você mandou esses dois códigos para o seu amigo. Para ele conseguir ler, o processo é o seguinte:
+
+ 1. Ele vai entrar no site do CyberChef, procurar por **PGP Decrypt** e arrastar para o meio da tela.
+
+ 2. No campo **Key**, ele vai colar a **Chave Privada** que você mandou. *(Obs: O campo pode ficar vermelho temporariamente, mas não se assuste, é normal!).*
+
+ 3. Em seguida, ele vai pegar a **Mensagem Criptografada** e colar no campo **INPUT** (lá no topo direito).
+
+ 4. **Prontinho!** O texto original e a fofoca revelada vão aparecer magicamente no campo **OUTPUT**.
+
+Viu como é fácil? É assim que se protege uma mensagem usando **criptografia assimétrica** de ponta a ponta. Agora suas fofocas estão a salvo de curiosos! 😉
+
